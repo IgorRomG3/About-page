@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.main.css">
@@ -9,9 +10,9 @@
 </head>
 <body>
 	<div class="container">
-		<header>
-			<div class="logo pull-left"><a href="#"><img src="./img/logo.png" alt=""></a></div>
-			<div class="search pull-right">
+		<header class="row">
+			<div class="col-md-6"><a href="#"><img src="./img/logo.png" alt=""></a></div>
+			<div class="search col-md-6">
 				<form>
 					<input id="search-top" type="text" placeholder="Search"><!--
 					--><button id="push-search">Go</button>
@@ -22,6 +23,14 @@
 			<div class="clearfix"></div>
 		</header>
 		<nav class="navbar navbar-default">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+    	</div>
+    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li><a href="#">home</a></li>
 				<li><a href="#">About US </a></li>
@@ -32,6 +41,7 @@
 				<li><a href="#">careers</a></li>
 				<li><a href="#">contact</a></li>
 			</ul>
+		</div>
 		</nav>
 		<div class="main-title">
 			<h1>About us</h1>

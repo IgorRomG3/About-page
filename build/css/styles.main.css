@@ -7,15 +7,14 @@ body {
   border-top: 5px solid #bebebe;
   background: url(../img/bg-body.png);
 }
-.container {
-  width: 960px;
-  padding: 0;
-}
 ul {
   list-style: none;
 }
 header {
   margin-bottom: 27px;
+}
+header form {
+  float: right;
 }
 header .search input[id=search-top] {
   padding-left: 11px;
@@ -44,6 +43,12 @@ nav.navbar.navbar-default {
   border: 0;
   box-shadow: 0px 0px 0px 1px #e7e7e7;
 }
+nav.navbar.navbar-default .navbar-collapse {
+  padding: 0;
+}
+nav.navbar.navbar-default .navbar-toggle {
+  float: left;
+}
 nav.navbar.navbar-default ul {
   height: 40px;
 }
@@ -56,6 +61,11 @@ nav.navbar.navbar-default li {
   font-weight: 400;
   line-height: 40px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 992px) {
+  nav.navbar.navbar-default li {
+    width: 90px;
+  }
 }
 nav.navbar.navbar-default li:hover {
   background-color: #29c5e6;
