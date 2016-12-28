@@ -1,0 +1,154 @@
+.right-side-nav {
+	margin-bottom: 30px;
+	li { 
+		padding-left: 31px;
+		height: 40px;
+		list-style: none;
+		position: relative;
+
+		background-color: #f3f3f3;
+		border: 1px solid #e7e7e7;
+		&:hover {
+			&:before
+			{
+				background-color: @main-blue;
+			}
+			a {
+				color: @main-blue;
+			}
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: 14px;
+			left:12px;
+
+			width: 8px;
+			height: 8px;
+			background-color: #8f8f8f;
+		}
+		a {
+			color: #8f8f8f;;
+			font-family: Oswald;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 40px;
+			text-transform: uppercase;
+			text-decoration: none;
+
+		}
+
+	}
+	
+}
+.offices {
+	.our-offices {
+		height: 38px;
+		background-color: @main-blue;
+		p {
+			padding: 11px;
+
+			color: #fff;
+			font-family: Oswald;
+			font-size: 14px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+	}
+	.map-offices {
+		height: 239px;
+
+		border: 11px solid #f3f3f3;
+		box-shadow: 0 0 0 1px #e7e7e7;
+		background-color: #e2e2e2;
+	}
+}
+.section-title {
+	margin-bottom: 19px;
+	height: 170px;
+	background-color: @main-blue;
+		.author-title {
+		padding: 20px 0 0 5px;
+		height: 100px;
+		color: #fff;
+		font-family: Oswald;
+		font-size: 33px;
+		font-weight: 300;
+		font-style: italic;
+		line-height: 34px;
+		text-transform: uppercase;
+	}
+	.author {
+		padding: 20px 10px 0 0;
+		height: 20px;
+		
+		color: #1d8ea6;
+		font-family: Oswald;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 34px;
+		text-align: right;
+	}
+}
+.about-contant {
+	list-style: none;
+	li {
+		margin-bottom: 25px;
+		p {
+			color: #8f8f8f;
+			font-family: Tahoma, arial;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 18px;
+		}
+		
+	}
+}
+.section-photo {
+	margin-bottom: 30px;
+	.photo {
+		height: 180px;
+		background-color: #e2e2e2;
+	}
+}
+.our-team-title {
+	margin-bottom: 20px;
+	p {
+		padding-left: 9px;
+		background-color: @main-blue;
+		
+		color: #fff;
+		font-family: Oswald;
+		font-size: 30px;
+		font-weight: 300;
+		line-height: 40px;
+		text-transform: uppercase;
+	}
+}
+.our-team-photo {
+	margin-bottom: 67px;
+	height: 100px;
+	background-color: @photo-bg;
+	position: relative;
+	.photo-info {
+		position: absolute;
+		bottom: -65px;
+		.name {
+			color: #8f8f8f;
+			font-family: Oswald;
+			font-size: 16px;
+			font-weight: 300;	
+		}
+		.position {
+			color: @main-blue;
+			font-family: Oswald;
+			font-size: 14px;
+			font-weight: 300;
+		}	
+	}
+			
+}
+.our-team-photo.bottom {
+	margin-bottom: 96px;
+}
+
