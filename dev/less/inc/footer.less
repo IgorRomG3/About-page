@@ -1,5 +1,4 @@
 footer {
-	height: 122px;
 	background-color: #bebebe;
 	.footer-contant {
 		h5 {
@@ -50,9 +49,11 @@ footer {
 		}
 		.footer-logo {
 			margin-top: 30px;
-		}
-		.copyright {
-			a {
+			text-align: right;
+			@media screen and (max-width:768px) {
+				text-align: center;
+			}
+				.copyright {
 				color: @footer-text;
 				text-decoration: none;
 			}

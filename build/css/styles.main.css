@@ -89,6 +89,15 @@ nav.navbar.navbar-default li:hover {
 nav.navbar.navbar-default li a {
   text-align: center;
 }
+nav.navbar.navbar-default li a:hover {
+  color: #fff;
+}
+nav.navbar.navbar-default .current-page {
+  background-color: #29c5e6;
+}
+nav.navbar.navbar-default .current-page a {
+  color: #fff;
+}
 .main-title {
   position: relative;
 }
@@ -119,6 +128,34 @@ nav.navbar.navbar-default li a {
 }
 .right-side-nav {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .right-side-nav {
+    height: 40px;
+    overflow: hidden;
+    transition: height 1s ease;
+  }
+  .right-side-nav:hover {
+    height: 240px;
+  }
+  .right-side-nav .active {
+    position: relative;
+  }
+  .right-side-nav .active:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    width: 8px;
+    height: 8px;
+    background-color: #8f8f8f;
+    transform: rotate(-45deg);
+    transition: transform 1s ease;
+  }
+  .right-side-nav .active:hover:after {
+    background-color: #29c5e6;
+    transform: rotate(0deg);
+  }
 }
 .right-side-nav li {
   padding-left: 31px;
@@ -152,6 +189,14 @@ nav.navbar.navbar-default li a {
   text-transform: uppercase;
   text-decoration: none;
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .right-side-nav li a {
+    font-size: 12px;
+  }
+}
+.offices {
+  margin-bottom: 25px;
+}
 .offices .our-offices {
   height: 38px;
   background-color: #29c5e6;
@@ -170,17 +215,12 @@ nav.navbar.navbar-default li a {
   box-shadow: 0 0 0 1px #e7e7e7;
   background-color: #e2e2e2;
 }
-.section-title {
+.jumbotron {
   margin-bottom: 19px;
-  height: 170px;
+  padding: 0;
   background-color: #29c5e6;
 }
-@media screen and (max-width: 768px) {
-  .section-title {
-    height: 375px;
-  }
-}
-.section-title .author-title {
+.jumbotron .author-title {
   padding: 20px 0 0 5px;
   color: #fff;
   font-family: Oswald;
@@ -190,7 +230,7 @@ nav.navbar.navbar-default li a {
   line-height: 34px;
   text-transform: uppercase;
 }
-.section-title .author {
+.jumbotron .author {
   padding: 10px 10px 0 0;
   color: #1d8ea6;
   font-family: Oswald;
@@ -216,6 +256,7 @@ nav.navbar.navbar-default li a {
   margin-bottom: 30px;
 }
 .section-photo .photo {
+  margin-bottom: 25px;
   height: 180px;
   background-color: #e2e2e2;
 }
@@ -258,7 +299,6 @@ nav.navbar.navbar-default li a {
   margin-bottom: 96px;
 }
 footer {
-  height: 122px;
   background-color: #bebebe;
 }
 footer .footer-contant h5 {
@@ -309,8 +349,14 @@ footer .footer-contant .sitemap_nav_rigth a {
 }
 footer .footer-contant .footer-logo {
   margin-top: 30px;
+  text-align: right;
 }
-footer .footer-contant .copyright a {
+@media screen and (max-width: 768px) {
+  footer .footer-contant .footer-logo {
+    text-align: center;
+  }
+}
+footer .footer-contant .footer-logo .copyright {
   color: #dbdbdb;
   text-decoration: none;
 }
