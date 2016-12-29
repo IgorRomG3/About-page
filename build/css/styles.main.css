@@ -12,8 +12,11 @@ ul {
 }
 header .logo {
   margin-bottom: 25px;
-  display: inline-block;
-  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  header .logo {
+    text-align: center;
+  }
 }
 header form {
   float: right;
@@ -172,9 +175,13 @@ nav.navbar.navbar-default li a {
   height: 170px;
   background-color: #29c5e6;
 }
+@media screen and (max-width: 768px) {
+  .section-title {
+    height: 375px;
+  }
+}
 .section-title .author-title {
   padding: 20px 0 0 5px;
-  height: 100px;
   color: #fff;
   font-family: Oswald;
   font-size: 33px;
@@ -184,8 +191,7 @@ nav.navbar.navbar-default li a {
   text-transform: uppercase;
 }
 .section-title .author {
-  padding: 20px 10px 0 0;
-  height: 20px;
+  padding: 10px 10px 0 0;
   color: #1d8ea6;
   font-family: Oswald;
   font-size: 20px;
