@@ -126,6 +126,93 @@ nav.navbar.navbar-default .current-page a {
     margin-left: -7px;
   }
 }
+main .slider {
+  padding: 40px 0 0 40px;
+  height: 280px;
+  background-color: #e2e2e2;
+}
+main .slider input[type=radio] {
+  position: relative;
+  display: none;
+}
+main .slider input[type=radio]:checked + label {
+  color: #29c5e6;
+}
+main .slider input[type=radio]:checked + label:before {
+  background-color: #29c5e6;
+}
+main .slider input[type=radio]:checked + label + .banner-content {
+  display: block;
+}
+main .slider input[type=radio]:not(:checked) + label + .banner-content {
+  display: none;
+}
+main .slider label {
+  position: absolute;
+  bottom: 10px;
+  color: #8f8f8f;
+  font-family: Oswald;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+main .slider label:before {
+  content: "";
+  padding-top: 5px;
+  position: absolute;
+  left: -30px;
+  bottom: -5px;
+  width: 24px;
+  height: 24px;
+  background-color: #8f8f8f;
+  color: #fff;
+  text-align: center;
+  vertical-align: sub;
+}
+main .slider label[for=first] {
+  left: 5%;
+}
+main .slider label[for=first]:before {
+  content: "1";
+}
+main .slider label[for=second] {
+  left: 30%;
+}
+main .slider label[for=second]:before {
+  content: "2";
+}
+main .slider label[for=third] {
+  left: 60%;
+}
+main .slider label[for=third]:before {
+  content: "3";
+}
+main .slider label[for=fourth] {
+  left: 80%;
+}
+main .slider label[for=fourth]:before {
+  content: "4";
+}
+main .slider .banner-content h1 {
+  color: #5a5a5a;
+  font-family: Oswald;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+main .slider .banner-content p {
+  color: #acacac;
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 16px;
+}
+main .sub-slider {
+  height: 50px;
+  background-color: #f3f3f3;
+}
 main .section-news {
   position: relative;
 }
