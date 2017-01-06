@@ -156,6 +156,7 @@ main .slider label {
   font-weight: 300;
   line-height: 16px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 main .slider label:before {
   content: "";
