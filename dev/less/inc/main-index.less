@@ -42,6 +42,13 @@ main {
 					text-align: center;
 					vertical-align: sub;
 				}
+				@media (max-width: 991px) {
+					font-size: 14px;
+					text-indent: 5px;
+					&:before {
+						left: -22px;
+					}
+				}
 			}
 			label[for=first] {
 				left: 5%;
@@ -96,7 +103,7 @@ main {
 				position: absolute;
 				top: 12px;
 				bottom: 0;
-				
+
 				width: 100%;
 				height: 14px;
 				background: repeating-linear-gradient(-45deg, #c4c4c4 0px, #c4c4c4 0px, transparent 2px, transparent 5px);
@@ -113,17 +120,17 @@ main {
 			line-height: 40px;
 			text-transform: uppercase;
 			position: relative;
-			
+
 			&:after {
 				content: "";
 				position: absolute;
 				bottom: 13px;
 				left: 0;
-				
+
 				width: 15px;
 				height: 15px;
 				background-color: @main-blue;
-				
+
 			}
 		}
 		h6 {
