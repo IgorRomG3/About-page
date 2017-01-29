@@ -1,0 +1,52 @@
+// PROJECT MAIN START
+main {
+  h2 {
+    margin-bottom: 15px;
+    height: 44px;
+    background-color: @main-blue;
+
+    color: #fff;
+    font-family: Oswald;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-indent: 10px;
+  }
+  p {
+    margin-bottom: 21px;
+
+    color: @project-text-color;
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .screenshot-library {
+    text-align: center;
+    .screenshots {
+      height: 180px;
+      background-color: #e2e2e2;
+    }
+    h5 {
+      margin: 9px 0 21px 0;
+      display: inline-block;
+
+      color: @project-text-color;
+      font-family: Oswald;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 40px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+  .project-main-header {
+    &:extend(.screenshot-library);
+    .project {
+      height: 100px;
+    }
+  }
+}
+
+// PROJECT MAIN FINISH

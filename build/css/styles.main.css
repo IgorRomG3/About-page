@@ -65,6 +65,12 @@ nav.navbar.navbar-default .navbar-toggle {
     margin-top: 0;
   }
 }
+@media and screen (max-width: 767px) {
+  nav.navbar.navbar-default .navbar-nav {
+    margin: 0;
+    /*for desable scroll under dropdown-menu on sm screens*/
+  }
+}
 nav.navbar.navbar-default .navbar-form {
   margin: 0;
   padding: 0;
@@ -480,7 +486,7 @@ main .clients {
 }
 .our-team-photo .photo-info {
   position: absolute;
-  bottom: -65px;
+  bottom: -83px;
 }
 .our-team-photo .photo-info .name {
   color: #8f8f8f;
@@ -496,6 +502,47 @@ main .clients {
 }
 .our-team-photo.bottom {
   margin-bottom: 96px;
+}
+main h2 {
+  margin-bottom: 15px;
+  height: 44px;
+  background-color: #29c5e6;
+  color: #fff;
+  font-family: Oswald;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-indent: 10px;
+}
+main p {
+  margin-bottom: 21px;
+  color: #8f8f8f;
+  font-family: Tahoma;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+main .screenshot-library {
+  text-align: center;
+}
+main .screenshot-library .screenshots {
+  height: 180px;
+  background-color: #e2e2e2;
+}
+main .screenshot-library h5 {
+  margin: 9px 0 21px 0;
+  display: inline-block;
+  color: #8f8f8f;
+  font-family: Oswald;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+main .project-main-header .project {
+  height: 100px;
 }
 footer {
   background-color: #bebebe;
